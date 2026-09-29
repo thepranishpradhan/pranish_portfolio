@@ -165,19 +165,19 @@ p{margin:0 0 1em}
 .pp-hero .pp-lede{max-width:56ch}
 .pp-hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 
-/* Portrait: a tailored gallery frame with a white inset and deep teal edge. */
+/* Portrait: restrained editorial treatment; the image meets the edge. */
 .pp-shot{
-  position:relative;justify-self:end;width:min(100%,340px);margin:0;
-  padding:3px;border-radius:24px;background:#163E36;
-  box-shadow:0 24px 50px -22px rgba(12,31,27,.38),0 4px 12px rgba(12,31,27,.10);
+  position:relative;justify-self:end;width:min(100%,320px);margin:0;
+  padding:0;border:0;border-radius:6px;background:transparent;
+  box-shadow:0 12px 32px -12px rgba(16,30,27,.20);
 }
 .pp-shot-in{
-  position:relative;padding:8px;border-radius:21px;overflow:hidden;
-  background:#fff;border:1px solid rgba(255,255,255,.8);
+  position:relative;padding:0;border:0;border-radius:6px;
+  overflow:hidden;background:transparent;
 }
 .pp-shot img{
-  display:block;width:100%;height:auto;aspect-ratio:1/1;
-  object-fit:cover;object-position:center;border-radius:12px;
+  display:block;width:100%;height:auto;aspect-ratio:4/5;
+  object-fit:cover;object-position:50% 50%;border-radius:0;
 }
 
 /* ---------- 5. KPI strip ---------- */
@@ -333,7 +333,7 @@ p{margin:0 0 1em}
   .pp-hdr .pp-btn{display:none}
   .pp-burger{display:grid}
   .pp-hero-grid{grid-template-columns:1fr;gap:36px}
-  .pp-shot{justify-self:center;width:min(100%,320px)}
+  .pp-shot{justify-self:center;width:min(100%,300px)}
   .pp-kpis{grid-template-columns:1fr 1fr}
   .pp-about,.pp-proj-body,.pp-two,.pp-contact-grid{grid-template-columns:1fr}
   .pp-role-row,.pp-skill-row{grid-template-columns:1fr;gap:16px}
