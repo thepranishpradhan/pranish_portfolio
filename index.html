@@ -148,21 +148,15 @@ p{margin:0 0 1em}
 /* ---------- 4. Hero ---------- */
 .pp-hero{padding-block:clamp(46px,6vw,84px) clamp(30px,4vw,48px)}
 .pp-hero-grid{display:grid;grid-template-columns:1.32fr .68fr;gap:clamp(30px,5vw,64px);align-items:center}
-.pp-where{
-  display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11.5px;
-  letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
-  background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px;margin-bottom:22px;
-}
-.pp-where i{width:7px;height:7px;border-radius:50%;background:var(--teal);flex:none}
-.pp-hero h1{
-  font-family:var(--name);font-size:clamp(38px,6.2vw,72px);font-weight:600;
-  letter-spacing:-.018em;line-height:1.04;font-variation-settings:'opsz' 144;
-}
-.pp-role{
-  font-family:var(--mono);font-size:clamp(12px,1.4vw,14px);letter-spacing:.13em;text-transform:uppercase;
-  color:var(--teal);margin:18px 0 20px;
-}
-.pp-hero .pp-lede{max-width:56ch}
+.pp-where{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;font-family:var(--body);font-size:12px;line-height:1.5;margin-bottom:24px}
+.pp-location{color:var(--muted);font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.pp-availability{display:inline-flex;align-items:center;gap:8px;padding:6px 11px;background:var(--teal-soft);color:#0B6656;border:1px solid #CFE3DB;border-radius:999px;font-weight:500}
+.pp-where i{width:6px;height:6px;border-radius:50%;background:var(--teal);flex:none}
+.pp-hero h1{font-family:var(--body);font-size:clamp(40px,5.3vw,64px);font-weight:600;letter-spacing:-.045em;line-height:1.08;text-wrap:balance}
+.pp-hero h1 span{color:var(--teal)}
+.pp-hero .pp-role{font-family:var(--body);font-size:clamp(15px,1.5vw,18px);font-weight:500;letter-spacing:.01em;text-transform:none;color:var(--teal);border-left:3px solid var(--teal);padding-left:13px;margin:20px 0 26px;line-height:1.45}
+.pp-hero .pp-lede{max-width:47ch;font-size:clamp(19px,1.8vw,22px);font-weight:500;line-height:1.5;letter-spacing:-.015em;color:var(--ink);margin:0 0 14px}
+.pp-hero .pp-intro-detail{max-width:59ch;font-size:16px;line-height:1.75;color:var(--muted);margin:0}
 .pp-hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 
 /* Portrait: restrained editorial treatment; the image meets the edge. */
@@ -363,7 +357,7 @@ p{margin:0 0 1em}
 }
 @media (max-width:600px){
   body{font-size:16px}
-  .pp-where{border-radius:14px;letter-spacing:.09em}
+  .pp-where{gap:10px 14px}
   .pp-kpis{grid-template-columns:1fr}
   .pp-hero-cta .pp-btn{flex:1 1 100%;justify-content:center}
   .pp-donut-row{flex-direction:column;align-items:flex-start;gap:16px}
@@ -433,10 +427,11 @@ p{margin:0 0 1em}
   <section class="pp-hero" aria-label="Introduction">
     <div class="pp-wrap pp-hero-grid">
       <div>
-        <span class="pp-where"><i></i>St. Louis, MO · Open to sales &amp; operations roles</span>
-        <h1>Pranish Pradhan</h1>
+        <div class="pp-where"><span class="pp-location">St. Louis, MO</span><span class="pp-availability"><i aria-hidden="true"></i>Open to sales &amp; operations roles</span></div>
+        <h1>Pranish <span>Pradhan</span></h1>
         <p class="pp-role">Business Operations &amp; Automotive Sales</p>
-        <p class="pp-lede">I help customers choose the right products and keep the business behind each sale running. My 5+ years in automotive sales and operations span consultative selling, customer loyalty, inventory, purchasing and supplier relationships. An MBA with a Business Analytics emphasis adds the tools to connect customer needs with business performance.</p>
+        <p class="pp-lede">I help customers choose the right products and keep the business behind each sale running.</p>
+        <p class="pp-intro-detail">My 5+ years in automotive sales and operations span consultative selling, customer loyalty, inventory, purchasing and supplier relationships. An MBA with a Business Analytics emphasis adds the tools to connect customer needs with business performance.</p>
         <div class="pp-hero-cta">
           <a class="pp-btn pp-btn-solid" href="#experience"><svg><use href="#pi-arrow"/></svg>Explore my experience</a>
           <a class="pp-btn pp-btn-line" href="mailto:pranishprof7@gmail.com"><svg><use href="#pi-mail"/></svg>Email me</a>
