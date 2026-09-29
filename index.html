@@ -324,6 +324,29 @@ p{margin:0 0 1em}
 .pp-top.pp-show{opacity:1;visibility:visible;transform:translateY(0)}
 .pp-top svg{width:18px;height:18px}
 
+/* Consistent content typography and standard round list markers. */
+.pp-lede,.pp-about p,.pp-proj li,.pp-role-row li,.pp-side li,
+.pp-edu p,.pp-course,.pp-kpi .pp-k-lab,.pp-phase li,.pp-certs li,
+.pp-chip,.pp-pill,.pp-key div,.pp-caption{color:#34413C;font-weight:400}
+.pp-tag,.pp-role,.pp-side h4,.pp-kpi .pp-k-num{color:var(--ink)}
+.pp-role-meta .pp-when,.pp-edu .pp-when{color:var(--muted)}
+.pp-tag::before{content:none;display:none}
+.pp-side ul,.pp-proj ul,.pp-role-row ul,.pp-phase,.pp-certs{
+  list-style:disc outside;padding-left:20px;
+}
+.pp-side li,.pp-proj li,.pp-role-row li,.pp-phase li,.pp-certs li{
+  display:list-item;padding-left:0;font-size:16px;line-height:1.6;
+}
+.pp-side li::before,.pp-proj li::before,.pp-role-row li::before,.pp-phase li::before{
+  content:none;display:none;
+}
+.pp-side li::marker,.pp-proj li::marker,.pp-role-row li::marker,
+.pp-phase li::marker,.pp-certs li::marker{color:#34413C;font-size:.85em}
+.pp-certs li{padding:12px 16px;font-weight:400}
+.pp-chip:hover{color:#34413C}
+.pp-contact .pp-tag,.pp-contact .pp-lede,.pp-line .pp-v{color:#EAF1EE}
+.pp-line .pp-v{font-weight:400}
+
 /* ---------- 12. Motion + responsive ---------- */
 .pp-rv{opacity:0;transform:translateY(14px);transition:opacity .65s cubic-bezier(.22,1,.36,1),transform .65s cubic-bezier(.22,1,.36,1)}
 .pp-rv.pp-in{opacity:1;transform:none}
@@ -440,21 +463,21 @@ p{margin:0 0 1em}
   <section class="pp-sec pp-rule" id="profile"><div class="pp-wrap">
     <div class="pp-head pp-rv"><p class="pp-tag">Profile</p><h2>Customer relationships. Commercial judgment. Hands-on operations.</h2></div>
     <div class="pp-about"><div class="pp-rv">
-      <p>At <strong>Mahakali Automobiles</strong>, I worked across the full sales process: understanding customer needs, demonstrating products, explaining warranties, discussing pricing and handling objections. I also coordinated free tire fitting and supported customers after the sale. I assisted approximately <strong>15–20 customers per weekday and 10–15 per weekend day</strong>, recommending tires, automotive parts, tools and accessories.</p>
-      <p>I designed and launched a <strong>loyalty and referral program</strong> and used Excel to track purchases, referrals, qualification progress and rewards. I managed inventory and purchasing records, traveled independently to Kathmandu to develop supplier relationships, and established commercial relationships with <strong>TOTAL Tools and Exide Batteries</strong> for continued sourcing.</p>
-      <p>My experience also includes supply-chain analysis at <strong>Laxmi Group</strong> and running <strong>Steal the Deal</strong>, my e-commerce business. With an <strong>MBA with a Business Analytics emphasis from Webster University</strong>, I bring both customer-facing experience and an analytical approach to product availability, pricing and business reporting.</p>
+      <p>At Mahakali Automobiles, I worked across the full sales process: understanding customer needs, demonstrating products, explaining warranties, discussing pricing and handling objections. I also coordinated free tire fitting and supported customers after the sale. I assisted approximately 15 to 20 customers per weekday and 10 to 15 per weekend day, recommending tires, automotive parts, tools and accessories.</p>
+      <p>I designed and launched a loyalty and referral program and used Excel to track purchases, referrals, qualification progress and rewards. I managed inventory and purchasing records, traveled independently to Kathmandu to develop supplier relationships, and established commercial relationships with TOTAL Tools and Exide Batteries for continued sourcing.</p>
+      <p>My experience also includes supply-chain analysis at Laxmi Group and running Steal the Deal, my e-commerce business. With an MBA with a Business Analytics emphasis from Webster University, I bring both customer-facing experience and an analytical approach to product availability, pricing and business reporting.</p>
     </div><aside class="pp-side pp-rv"><h4>What I bring</h4><ul>
       <li>Consultative selling and customer needs assessment</li><li>Product demonstrations and warranty explanation</li><li>Loyalty programs, referrals and customer follow-up</li><li>Inventory, purchasing and order management</li><li>B2B supplier development and coordination</li><li>Excel reporting, SQL analysis and Power BI dashboards</li>
     </ul><p class="pp-langs">Languages: English (Fluent) · Nepali (Native)</p></aside></div>
   </div></section>
 
   <!-- ===== EXPERIENCE ===== -->
-<section class="pp-sec pp-rule" id="experience"><div class="pp-wrap"><div class="pp-head pp-rv"><p class="pp-tag">Experience</p><h2>From the sales floor to the supply chain.</h2><p class="pp-lede">Experience across automotive retail, supplier coordination and independent e-commerce operations.</p></div><div class="pp-role-row pp-rv"><div class="pp-role-meta"><span class="pp-when">Nov 2018 to Jun 2024</span><h3>Business Operations Associate | Automotive Sales</h3><p>Mahakali Automobiles, Nepal<br>Part-time</p></div><ul><li>Assisted approximately <b>15–20 customers per weekday and 10–15 per weekend day</b>, identifying needs, explaining product features and warranties, and recommending suitable tires, automotive parts, tools and accessories.</li>
+<section class="pp-sec pp-rule" id="experience"><div class="pp-wrap"><div class="pp-head pp-rv"><p class="pp-tag">Experience</p><h2>From the sales floor to the supply chain.</h2><p class="pp-lede">Experience across automotive retail, supplier coordination and independent e-commerce operations.</p></div><div class="pp-role-row pp-rv"><div class="pp-role-meta"><span class="pp-when">Nov 2018 to Jun 2024</span><h3>Business Operations Associate | Automotive Sales</h3><p>Mahakali Automobiles, Nepal<br>Part-time</p></div><ul><li>Assisted approximately 15 to 20 customers per weekday and 10 to 15 per weekend day, identifying needs, explaining product features and warranties, and recommending suitable tires, automotive parts, tools and accessories.</li>
 <li>Managed the full sales process, including product demonstrations, pricing discussions, objection handling, free tire-fitting coordination, after-sales support and complaint resolution.</li>
-<li>Personally generated <b>NPR 115,625 in single-day sales during the 2022 festival season</b> while independently operating the store and handling customer consultations, recommendations and transactions.</li>
-<li>Designed and launched a <b>loyalty and referral program that enrolled 50+ customers within six months</b>. Used Excel to track purchases, referrals, qualification progress and rewards, including complimentary tires and promotional merchandise.</li>
-<li>Managed inventory for <b>200+ vehicle parts and accessories</b>, maintaining sales, invoice, purchase-order, customer and inventory records while coordinating purchasing and replenishment.</li>
-<li>Traveled independently to Kathmandu for B2B supplier development and established commercial relationships with <b>TOTAL Tools and Exide Batteries</b> for continued product sourcing.</li>
+<li>Personally generated NPR 115,625 in single-day sales during the 2022 festival season while independently operating the store and handling customer consultations, recommendations and transactions.</li>
+<li>Designed and launched a loyalty and referral program that enrolled 50+ customers within six months. Used Excel to track purchases, referrals, qualification progress and rewards, including complimentary tires and promotional merchandise.</li>
+<li>Managed inventory for 200+ vehicle parts and accessories, maintaining sales, invoice, purchase-order, customer and inventory records while coordinating purchasing and replenishment.</li>
+<li>Traveled independently to Kathmandu for B2B supplier development and established commercial relationships with TOTAL Tools and Exide Batteries for continued product sourcing.</li>
 <li>Participated in vendor meetings with tire and automotive suppliers to discuss new products, sales performance, product demand and ongoing business opportunities.</li></ul></div>
 <div class="pp-role-row pp-rv"><div class="pp-role-meta"><span class="pp-when">Feb 2023 to Jul 2024</span><h3>Supply Chain and Logistics Analyst</h3><p>Laxmi Group, Nepal<br>Full-time</p></div><ul><li>Analyzed demand, inventory and order data to support purchasing, replenishment and business decisions.</li>
 <li>Monitored inventory levels, supplier lead times, order status and delivery commitments to support product availability.</li>
@@ -482,8 +505,8 @@ p{margin:0 0 1em}
         <div class="pp-proj-body">
           <div>
             <ul>
-              <li>Cleaned and analyzed a <b>3,900-row customer shopping dataset</b> using Python (Pandas) and SQL (PostgreSQL), loading the transformed data into a relational database to answer <b>10 business questions</b> on revenue, product ratings and customer segmentation.</li>
-              <li>Built an interactive Power BI dashboard revealing that <b>loyal customers with 11+ prior purchases made up 80% of the customer base</b>, and that <b>male customers drove 68% of total revenue</b>, primarily through purchase volume rather than higher per-transaction spend.</li>
+              <li>Cleaned and analyzed a 3,900-row customer shopping dataset using Python (Pandas) and SQL (PostgreSQL), loading the transformed data into a relational database to answer 10 business questions on revenue, product ratings and customer segmentation.</li>
+              <li>Built an interactive Power BI dashboard revealing that loyal customers with 11+ prior purchases made up 80% of the customer base, and that male customers drove 68% of total revenue, primarily through purchase volume rather than higher per-transaction spend.</li>
             </ul>
             <div class="pp-stack">
               <span class="pp-pill">Python</span><span class="pp-pill">Pandas</span><span class="pp-pill">SQL</span>
@@ -537,13 +560,13 @@ p{margin:0 0 1em}
       <!-- Project 2 -->
       <article class="pp-proj pp-rv"><div class="pp-proj-top"><h3>NYC 311 HPD Complaint Resolution Analysis</h3><span class="pp-meta">Independent portfolio project</span></div>
       <div class="pp-proj-body"><div><ul>
-        <li>Cleaned and validated a <b>405-ticket sample</b> of closed NYC 311 HPD housing complaints with Python and Pandas, then analyzed resolution times in PostgreSQL using CTEs, window functions and percentile calculations.</li>
+        <li>Cleaned and validated a 405-ticket sample of closed NYC 311 HPD housing complaints with Python and Pandas, then analyzed resolution times in PostgreSQL using CTEs, window functions and percentile calculations.</li>
         <li>Developed business requirements, a BPMN process map, a recommendation memo and a Power BI dashboard to connect the analysis with a proposed prioritization pilot.</li>
-        <li>Documented duplicate sensitivity and sample limitations. The <b>30-day threshold is a project benchmark</b>; the narrow extraction windows do not represent all HPD complaints.</li>
+        <li>Documented duplicate sensitivity and sample limitations. The 30-day threshold is a project benchmark; the narrow extraction windows do not represent all HPD complaints.</li>
       </ul><div class="pp-stack"><span class="pp-pill">Python</span><span class="pp-pill">PostgreSQL</span><span class="pp-pill">Power BI</span><span class="pp-pill">Business Requirements</span><span class="pp-pill">BPMN</span></div>
       <p style="margin-top:20px"><a class="pp-btn pp-btn-line" href="https://github.com/thepranishpradhan/nyc311-hpd-complaint-analysis" target="_blank" rel="noopener">View project and deliverables</a></p></div>
       <div class="pp-dash"><div class="pp-dash-top"><h4>Project evidence</h4></div><ul class="pp-phase">
-      <li class="pp-done"><span class="pp-dot"><svg><use href="#pi-check"/></svg></span><span>Cleaning notebook and SQL analysis</span></li><li class="pp-done"><span class="pp-dot"><svg><use href="#pi-check"/></svg></span><span>Business requirements document</span></li><li class="pp-done"><span class="pp-dot"><svg><use href="#pi-check"/></svg></span><span>Current-state BPMN process map</span></li><li class="pp-done"><span class="pp-dot"><svg><use href="#pi-check"/></svg></span><span>Recommendation memo and Power BI dashboard</span></li>
+      <li class="pp-done"><span>Cleaning notebook and SQL analysis</span></li><li class="pp-done"><span>Business requirements document</span></li><li class="pp-done"><span>Current-state BPMN process map</span></li><li class="pp-done"><span>Recommendation memo and Power BI dashboard</span></li>
       </ul><p class="pp-caption">Self-directed work using public data. Stakeholder roles and recommendations are illustrative; this was not an engagement for NYC HPD.</p></div></div></article>
     </div></section>
 
@@ -566,7 +589,7 @@ p{margin:0 0 1em}
             <span class="pp-when">Aug 2024 to May 2026</span>
             <h3>Master of Business Administration<br>Business Analytics Emphasis</h3>
             <p>Webster University · St. Louis, Missouri</p>
-            <p class="pp-course"><strong>Coursework:</strong> Data Visualization · Business Intelligence · Marketing Analytics · Data-Driven Decision Making</p>
+            <p class="pp-course">Coursework: Data Visualization · Business Intelligence · Marketing Analytics · Data-Driven Decision Making</p>
           </div>
           <div class="pp-edu">
             <span class="pp-when">Jul 2019 to Dec 2023</span>
@@ -576,12 +599,12 @@ p{margin:0 0 1em}
         </div>
         <div class="pp-rv">
           <ul class="pp-certs">
-            <li><span class="pp-badge"><svg><use href="#pi-cert"/></svg></span>SQL Essential Training</li>
-            <li><span class="pp-badge"><svg><use href="#pi-cert"/></svg></span>Power BI Data Modeling with DAX</li>
-            <li><span class="pp-badge"><svg><use href="#pi-cert"/></svg></span>Financial Forecasting with Analytics</li>
-            <li><span class="pp-badge"><svg><use href="#pi-cert"/></svg></span>Statistics Foundations 4: Advanced Topics</li>
-            <li><span class="pp-badge"><svg><use href="#pi-cert"/></svg></span>Excel for Accounting</li>
-            <li><span class="pp-badge"><svg><use href="#pi-cert"/></svg></span>Excel: PivotTables for Beginners</li>
+            <li>SQL Essential Training</li>
+            <li>Power BI Data Modeling with DAX</li>
+            <li>Financial Forecasting with Analytics</li>
+            <li>Statistics Foundations 4: Advanced Topics</li>
+            <li>Excel for Accounting</li>
+            <li>Excel: PivotTables for Beginners</li>
           </ul>
           <p class="pp-certs-note">All via LinkedIn Learning · Oct 2025 to Aug 2026</p>
         </div>
